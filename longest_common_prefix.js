@@ -20,7 +20,7 @@ var findCommonPrefix = function(str1, str2) {
  * @return {string}
  */
 var longestCommonPrefix = function(strs) {
-  var prefix = strs[0];
+  var prefix = strs.length ? strs[0] : "";
 
   for (var i = 1; i < strs.length; i++) {
     prefix = findCommonPrefix(prefix, strs[i]);
